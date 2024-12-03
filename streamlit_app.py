@@ -1,12 +1,13 @@
 import streamlit as st
 from openai import OpenAI
-import os
+# import os
 import tiktoken
 import pandas as pd
 from scipy import spatial
 import ast
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
+# openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 EMBEDDING_MODEL = "text-embedding-3-small"
 GPT_MODEL = "gpt-4o-mini"
 

@@ -1,2 +1,5 @@
 streamlit
-openai
+openai==1.54.4
+pandas==2.1.4
+tiktoken==0.8.0
+scipy==1.13.1
